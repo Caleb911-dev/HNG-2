@@ -1,0 +1,75 @@
+.backdrop {
+  background: url(../../images/backdrop.png);
+  background-size: cover;
+  height: 494px;
+}
+.nav {
+  display: flex;
+  padding: 26px 173px 0 542px;
+}
+.navContent1 {
+  display: flex;
+}
+.active {
+  font-weight: 700;
+}
+.about {
+  padding: 0 25px;
+}
+.navIcon1 {
+  margin-left: 308px;
+}
+.icons1 {
+  padding: 0 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid #eed7b8;
+  background-color: white;
+  width: 32%;
+  margin: 172px 468px;
+  padding: 3px;
+  border-radius: 7px;
+}
+.searchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 7px;
+}
+.listings {
+  background-color: #fff0f0;
+  padding: 63px 0 63px 178px;
+  overflow: hidden;
+  position: relative;
+}
+.listingCards {
+  display: flex;
+  padding: 30px 0px;
+  gap: 30px;
+}
+.listings h1 {
+  font-weight: 600;
+  font-size: 53px;
+  color: #454545;
+  padding-top: 24px;
+}
+.face {
+  font-weight: 600;
+  font-size: 53px;
+  color: #454545;
+}
+.instag {
+  background-color: white;
+  width: 722px;
+  height: 56px;
+  position: absolute;
+  left: 320px;
+  top: 3911px;
+}
+.instag p {
+  text-align: center;
+  padding: 16px 86px;
+}

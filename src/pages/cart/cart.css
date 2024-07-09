@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.sadSection {
+  background-color: #fff0f0;
+}
+.sadCart {
+  text-align: center;
+  padding-top: 122px;
+}
+.sadCart h5 {
+  padding: 48px 0 16px 0;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+.sadCart p {
+  font-weight: 700;
+  font-size: 21px;
+  color: #999999;
+  font-family: "Lato", sans-serif;
+  width: 30%;
+  padding-left: 447px;
+  padding-bottom: 40px;
+}
+.sadCart button {
+  padding: 8px 54.5px;
+  background-color: #ffd7be;
+  color: white;
+  border-radius: 22px;
+  font-weight: 600;
+  border: none;
+  font-size: 25px;
+  margin-bottom: 184px;
+}
+.sadCart button:hover {
+  background-color: #fac3a1;
+}

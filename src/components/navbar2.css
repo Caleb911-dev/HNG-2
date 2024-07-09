@@ -1,0 +1,17 @@
+.nav2 {
+  display: flex;
+  padding: 0 173px 0 179px;
+}
+
+.nav2Description {
+  padding: 45px 280px 0 272px;
+}
+.nav2Description h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #454545;
+}
+
+.icons2 {
+  padding: 22px 3px;
+}

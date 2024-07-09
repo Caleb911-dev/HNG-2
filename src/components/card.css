@@ -1,0 +1,33 @@
+.card {
+  background-color: white;
+  border-radius: 26.58px;
+}
+.card img {
+  height: 300px;
+}
+.cardInfo {
+  padding: 38px 11px;
+}
+.cardInfo h2 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 24.81px;
+  line-height: 1.5;
+  color: #454545;
+  width: 80%;
+}
+.cardInfo h6 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #454545;
+}
+.productButton {
+  background-color: #ffd7be;
+  padding: 10px 62px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 9px;
+  margin-top: 18px;
+  margin-left: 15px;
+}

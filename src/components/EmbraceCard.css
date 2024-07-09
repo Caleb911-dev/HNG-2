@@ -1,0 +1,22 @@
+.embraceCard {
+  flex: 1;
+  background-color: white;
+  padding: 75px 0px 5px 28px;
+  border-bottom-right-radius: 145px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.embraceCard h4 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #454545;
+}
+.embraceCard p {
+  width: 95%;
+  padding-bottom: 75px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #454545;
+}

@@ -1,0 +1,103 @@
+.checkoutPage {
+  background-color: #fff0f0;
+  overflow: hidden;
+}
+.payment {
+  padding: 27px 0px 0px 215px;
+}
+.payment h2 {
+  padding-bottom: 6px;
+  font-weight: 600;
+  font-size: 26px;
+  color: #454545;
+}
+.payment h4 {
+  font-weight: 700;
+  font-size: 22px;
+  color: rgba(69, 69, 69, 0.5);
+}
+.atmCard {
+  padding-top: 17px;
+}
+.atmCard input {
+  margin-right: 14px;
+}
+.atmCard label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #454545;
+}
+.debit {
+  padding-right: 57px;
+}
+.rad {
+  accent-color: #ffd7be;
+  border-radius: 0;
+}
+.holder {
+  font-weight: 400;
+  font-size: 19px;
+  color: #454545;
+  padding-bottom: 11px;
+}
+#p1 {
+  padding-top: 23px;
+  padding-bottom: 8px;
+}
+.input1 {
+  width: 289.16px;
+  height: 52.94px;
+  border-radius: 6px;
+  border: 0.72px;
+  color: rgba(69, 69, 69, 0.6);
+}
+.sect1 {
+  display: flex;
+  gap: 29px;
+}
+.delivery {
+  padding-top: 91px;
+}
+.deliveryDets {
+  padding-bottom: 34px;
+}
+.input2 {
+  width: 268.46px;
+  height: 52.94px;
+  border-radius: 7.56px;
+  border: 0.95px;
+}
+.inputSpecial {
+  width: 85px;
+  height: 52px;
+  border-radius: 7.5px;
+  border: 0.95px;
+}
+.sect2 {
+  display: flex;
+  gap: 60px;
+  padding-bottom: 54px;
+}
+.sect3 {
+  display: flex;
+  gap: 60px;
+}
+.order {
+  border: none;
+  width: 442px;
+  margin-top: 92px;
+  margin-bottom: 53px;
+  margin-left: 253px;
+  height: 54px;
+  color: white;
+  background-color: #ffd7be;
+  font-size: 23px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.order:hover {
+  background-color: #fac3a1;
+}
+@media screen and (width < 1000px) {
+}

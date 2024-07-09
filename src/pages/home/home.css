@@ -1,0 +1,121 @@
+.home {
+  background-color: #fff0f0;
+  margin: 0;
+}
+.homeSection {
+  padding: 28.75px 10.9rem 0 10.75rem;
+  display: flex;
+}
+.homeDescription {
+  padding-top: 76px;
+}
+.homeDescription h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #454545;
+}
+.homeDescription p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 60%;
+  color: #454545;
+  padding-top: 11px;
+  padding-bottom: 54px;
+}
+.homeDescription button {
+  margin-left: 54px;
+  padding: 15px 62px;
+  border-radius: 12px;
+  border-style: none;
+  background-color: #ffd7be;
+  color: white;
+}
+.homeDescription button:hover {
+  background-color: #fac3a1;
+}
+.homeDescription img {
+  margin-bottom: 83px;
+}
+.cardSection {
+  margin-top: 80px;
+}
+.cardSection h1 {
+  text-align: center;
+  background-color: #ffd7be;
+  color: #454545;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 1.3;
+}
+.cards {
+  display: flex;
+  padding: 30px 11px;
+  gap: 30px;
+}
+
+.discoverSection {
+  display: flex;
+  padding: 79px 10.9rem 0 10.75rem;
+}
+.discoverDescription {
+  padding: 92px 0 0 100px;
+}
+.discoverDescription h1 {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 69px;
+  width: 95%;
+  color: #454545;
+}
+.discoverDescription p {
+  font-size: 19.64px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 85%;
+  padding-top: 13px;
+}
+.embraceSection {
+  padding: 40px 10.9rem 0 10.75rem;
+}
+.embraceSection h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #454545;
+}
+.embrace {
+  display: flex;
+  gap: 40px;
+}
+.testimonial {
+  padding-top: 80px;
+  position: relative;
+  margin-bottom: 118px;
+}
+.testimonial h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #454545;
+}
+.testimonialCard {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+}
+.insta {
+  background-color: white;
+  width: 722px;
+  height: 56px;
+  position: absolute;
+  left: 320px;
+  bottom: -145px;
+}
+.insta p {
+  text-align: center;
+  padding: 16px 86px;
+}

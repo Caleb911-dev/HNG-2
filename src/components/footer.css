@@ -1,0 +1,12 @@
+.footer {
+  background-color: #ffd7be;
+  padding-top: 136px;
+}
+.footer p {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 28px 0 28px 172px;
+}
+.footer hr {
+  border: 1px solid #454545 30%;
+}

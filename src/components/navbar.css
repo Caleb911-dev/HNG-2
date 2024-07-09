@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  padding: 0 8.5rem;
+}
+.navContent {
+  display: flex;
+  padding: 1.6rem 17.7rem;
+  font-weight: 500;
+}
+.navContent p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #454545;
+}
+.navContent p:hover {
+  color: rgb(7, 0, 0);
+}
+.icons {
+  padding: 3px;
+}
+.icons:hover {
+  color: purple;
+}
+.about {
+  padding: 0 25px;
+}
+.navIcons {
+  padding: 1.6rem 0;
+}
