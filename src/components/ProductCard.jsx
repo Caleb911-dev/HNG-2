@@ -8,7 +8,7 @@ const ProductCard = ({ image, title, price }) => {
       <img src={image} alt="" />
       <div className="cardInfo">
         <h2 className="title">{title}</h2>
-        <h6 className="price">{price}</h6>
+        <h6 className="price">${price}</h6>
         <div className="test">
           <Link to="/checkout">
             <button className="productButton">ADD TO CART</button>

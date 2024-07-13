@@ -14,7 +14,6 @@ import makeupset3 from "../../images/makeupset (3).png";
 import lipgloss from "../../images/lipgloss.png";
 import lipstick from "../../images/lipstick.png";
 import lens from "../../images/lens.png";
-import home from "../../images/home.png";
 import concealer from "../../images/concealer.png";
 import eyeshadow from "../../images/eyeshadow.png";
 import brushset from "../../images/brushset.png";
@@ -24,10 +23,34 @@ import skyline from "../../images/skyline.png";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import axios from "axios";
 
 import Footer from "../../components/Footer";
+import { useState, useEffect } from "react";
 
 const Product = () => {
+  const [products, setProducts] = useState([]);
+  console.log(products);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://timbu-get-all-products.reavdev.workers.dev/?organization_id=ba2c7b2438954fe78cec19ff8224776c&Appid=QOAOJT46ZDBPY81&Apikey=5595f615d1174bb3b10c09fe250581e220240712162748334961",
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        setProducts(response.data.items);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -75,103 +98,79 @@ const Product = () => {
       <section className="listings">
         <h1 className="face">Face</h1>
         <Carousel responsive={responsive}>
-          <ProductCard
-            image={facepowder}
-            title="LAKME FACE POWDER"
-            price="$7.99"
-          />
-          <ProductCard
-            image={nude}
-            title="NUDE BY NATURE POWDER"
-            price="$16.99"
-          />
-          <ProductCard
-            image={concealer}
-            title="FACE CONCEALER"
-            price="$12.99"
-          />
-          <ProductCard image={nude} title="LAKME FACE POWDER" price="$9.99" />
+          {products
+            .filter((product) => product.categories[0].name == "face")
+            .map((product, index) => {
+              return (
+                <ProductCard
+                  key={index}
+                  image={`https:api.timbu.cloud/images/${product.photos[0].url}`}
+                  title={product.name}
+                  price={product.current_price[0].USD[0]}
+                />
+              );
+            })}
         </Carousel>
 
         <h1>Eyes</h1>
         <Carousel responsive={responsive}>
-          <ProductCard
-            image={mascara}
-            title="XPRESS CONTROL MASCARA"
-            price="$7.99"
-          />
-          <ProductCard
-            image={eyeshadow}
-            title="NUDE EYE SHADOW"
-            price="$14.99"
-          />
-          <ProductCard
-            image={makeupset8}
-            title="MATT EYE MASCARA"
-            price="$8.99"
-          />
-          <ProductCard
-            image={mascara}
-            title="XPRESS CONTROL MASCARA"
-            price="$7.99"
-          />
+          {products
+            .filter((product) => product.categories[0].name == "eyes")
+            .map((product, index) => {
+              return (
+                <ProductCard
+                  key={index}
+                  image={`https:api.timbu.cloud/images/${product.photos[0].url}`}
+                  title={product.name}
+                  price={product.current_price[0].USD[0]}
+                />
+              );
+            })}
         </Carousel>
         <h1>Lip</h1>
         <Carousel responsive={responsive}>
-          <ProductCard image={lipgloss} title="241 LIPGLOSS" price="$7.99" />
-          <ProductCard image={lipstick} title="LAKME LIP STICK" price="$8.99" />
-          <ProductCard
-            image={nudelipgloss}
-            title="NUDE BY NATURE LIPGLOSS"
-            price="$19.99"
-          />
-          <ProductCard
-            image={lipgloss}
-            title="XPRESS CONTROL MASCARA"
-            price="$7.99"
-          />
+          {products
+            .filter((product) => product.categories[0].name == "lip")
+            .map((product, index) => {
+              return (
+                <ProductCard
+                  key={index}
+                  image={`https:api.timbu.cloud/images/${product.photos[0].url}`}
+                  title={product.name}
+                  price={product.current_price[0].USD[0]}
+                />
+              );
+            })}
         </Carousel>
         <h1>Makeup</h1>
         <Carousel responsive={responsive}>
-          <ProductCard
-            image={brushset}
-            title="XPRESS CONTROL BRUSH SET"
-            price="$24.99"
-          />
-          <ProductCard
-            image={eyemas}
-            title="LAKME EYE MASCARA"
-            price="$14.99"
-          />
-          <ProductCard
-            image={makeupset}
-            title="3 IN 1 MAKEUUP SET"
-            price="$19.99"
-          />
-          <ProductCard
-            image={brushset}
-            title="LAKME EYE SHADOW"
-            price="$7.99"
-          />
+          {products
+            .filter((product) => product.categories[0].name == "makeup")
+            .map((product, index) => {
+              return (
+                <ProductCard
+                  key={index}
+                  image={`https:api.timbu.cloud/images/${product.photos[0].url}`}
+                  title={product.name}
+                  price={product.current_price[0].USD[0]}
+                />
+              );
+            })}
         </Carousel>
         <h1>Makeup Kit</h1>
         <Carousel responsive={responsive}>
-          <ProductCard
-            image={lens}
-            title="BEAUTY CONTACT LENS"
-            price="$29.99"
-          />
-          <ProductCard
-            image={skyline}
-            title="SKYLINE MAKEUP BAG"
-            price="$19.99"
-          />
-          <ProductCard
-            image={makeupset3}
-            title="MERBAY CLEAR MAKEUP BAG"
-            price="$21.99"
-          />
-          <ProductCard image={home} title="HOME MAKEUP KIT" price="$24.99" />
+          {products
+            .filter((product) => product.categories[0].name == "makeup kit")
+            .map((product, index) => {
+              return (
+                <ProductCard
+                  key={index}
+                  image={`https:api.timbu.cloud/images/${product.photos[0].url}`}
+                  title={product.name}
+                  price={product.current_price[0].USD[0]}
+                />
+              );
+            })}
         </Carousel>
       </section>
       <div className="instag">
