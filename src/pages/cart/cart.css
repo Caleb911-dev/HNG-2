@@ -1,27 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-.sadSection {
+.cartSection {
   background-color: #fff0f0;
+  color: #454545;
 }
-.sadCart {
-  text-align: center;
-  padding-top: 122px;
+.header {
+  display: flex;
+  padding: 63px 228px 0 189px;
+  align-items: center;
 }
-.sadCart h5 {
-  padding: 48px 0 16px 0;
-  font-size: 32px;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
+.prod {
+  padding-right: 555px;
 }
-.sadCart p {
+.qty {
+  padding-right: 58px;
+}
+.prodAmount {
+  display: flex;
+  padding-right: 334px;
+}
+.prodAmount img {
+  margin-right: 10px;
+}
+.prodAmount h6 {
+  width: 90%;
+}
+.prodTotal {
+  padding-right: 683px;
+}
+
+.increment {
+  display: flex;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 30px;
+  width: 86px;
+  height: 34px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3px;
+  margin-right: 58px;
+}
+.header h6 {
+  font-size: 16px;
   font-weight: 700;
-  font-size: 21px;
-  color: #999999;
-  font-family: "Lato", sans-serif;
-  width: 30%;
-  padding-left: 447px;
-  padding-bottom: 40px;
 }
-.sadCart button {
+.increment button {
+  border: none;
+  background-color: white;
+}
+
+.bottom {
+  text-align: center;
+  padding-top: 155px;
+}
+
+.bottom button {
   padding: 8px 54.5px;
   background-color: #ffd7be;
   color: white;
@@ -31,6 +63,6 @@
   font-size: 25px;
   margin-bottom: 184px;
 }
-.sadCart button:hover {
+.bottom button:hover {
   background-color: #fac3a1;
 }

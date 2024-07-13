@@ -35,7 +35,7 @@ const Product = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://timbu-get-all-products.reavdev.workers.dev/?organization_id=ba2c7b2438954fe78cec19ff8224776c&Appid=&Apikey=",
+          "https://timbu-get-all-products.reavdev.workers.dev/?organization_id=ba2c7b2438954fe78cec19ff8224776c&Appid=QOAOJT46ZDBPY81&Apikey=5595f615d1174bb3b10c09fe250581e220240712162748334961",
           {
             headers: {
               "Content-Type": "application/json",
